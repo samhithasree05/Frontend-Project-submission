@@ -1,1 +1,30 @@
+Basic resume builder built using HTML, CSS, and JavaScript — no backend, no frameworks. The app lets users enter personal details, education, skills, and experience, and generate a clean resume instantly.
 
+resume-builder-application/
+├── assets/
+│   ├── css/              # All stylesheet files
+│   ├── images/           # Icons, logos, or photos
+│   └── js/
+│       └── app.js        # Main JavaScript logic
+├── index.html            # Input form and main app page
+├── resume.html           # Resume preview/output page
+└── README.md             # Project documentation
+
+Collects user input through a clean HTML form.
+Displays live preview or generates formatted resume in resume.html.
+Supports multiple sections: personal info, education, skills, and experience.
+Option to print or download resume as PDF (via browser or html2pdf.js).
+Fully client-side — no data upload.
+
+this is how my project works:
+
+index.html — collects user data through forms.
+app.js — handles event listeners, data validation, and passes data to resume.html (via localStorage or query params).
+resume.html — formats and displays the resume using dynamic content injection.
+css — contains layout, fonts, and print styling for PDF download.
+
+Future Improvements may take place:
+
+Add multiple templates for different resume styles.
+Include dark/light mode toggle.
+Support JSON export/import of user data.Using backend and implementing database.
